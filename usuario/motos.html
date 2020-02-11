@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Oscar Rodriguez Sedes">
+  <meta name="description" content="Movilidad Cero Emisiones es un portal informativo de contenido dedicado al mundo de la movilidad electrica">
+  <meta name="keywords" content="electrico,coche,automovil,motocileta,moto,bicicleta,patinete,sostenible,energia,renovable,verde,cambio,climatico,cero,emisiones">
+  <title>MCE - Movilidad Cero Emisiones</title>
+  <link rel="stylesheet" type="text/css" href="../estilos/principal.css">
+  <link rel="stylesheet" type="text/css" href="../estilos/imprimir.css" media="print">
+  <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Roboto:300'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+  <script type="text/javascript" src="../javascript/index.js"></script>
+</head>
+
+<body>
+  <header>
+    <a href="../index.html">
+      <img class="logo_cabecera" src="../imagenes/logotipo.png" alt="logotipo MCE">
+    </a>
+    <a class="oculto login" id="logueado" title="Logout" onclick="logout()">
+      <label>Logout</label><i class="far fa-user-circle"></i>
+    </a>
+  <button class="visible login" id="login" ondblclick="verFormulario()"><i class="fas fa-user-circle"></i></button>
+  <div class="formulario">
+    <form id="formulario" class="oculto" action="" method="post" onsubmit="return login(usuario.value,pass.value)">
+      <label>Usuario</label>
+      <input class="campos" type="email" id="usuario" placeholder="correo@mail.com" required>
+      <label>Contraseña</label>
+      <input class="campos" type="password" id="pass" required>
+      <button class="boton" type="submit" title="Login">
+        <i class="far fa-check-square"></i>
+      </button>
+      <a class="boton" title="Registro" href="../usuario/registro.html">
+        <i class="far fa-edit"></i>
+      </a>
+    </form>
+  </header>
+  <nav>
+    <div class="nav_principal">
+      <ul>
+        <li>
+          <a href="autos.html">AUTOMÓVILES</a>
+        </li>
+        <li>
+          <a href="camiones.html">CAMIONES </a>
+        </li>
+        <li>
+          <a href="buses.html">AUTOBUSES</a>
+        </li>
+        <li>
+          <a href="motos.html">MOTOCICLETAS</a>
+        </li>
+        <li>
+          <a href="bicis.html">BICICLETAS</a>
+        </li>
+        <li>
+          <a href="patinetes.html">PATINETES</a>
+        </li>
+        <li>
+          <a href="recarga.html">RECARGA</a>
+        </li>
+        <li>
+          <a href="legislacion.html">LEGISLACION</a>
+        </li>
+      </ul>
+    </div>
+    <div class="nav_secundaria">
+      <ul>
+        <li>
+          <i class="fas fa-home"></i><a href="../index.html">Inicio</a>
+        </li>
+        <li>
+          <i class="fas fa-long-arrow-alt-right"></i><a href="motos.html">Motocicletas</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <aside>
+      <div class="anuncios">
+        <div class="rectangulo">
+          <h3>Noticias</h3>
+        </div>
+      </div>
+    </aside>
+    <div class="destacados">
+      <div class="rectangulo">
+        <h3>Motocicletas</h3>
+      </div>
+    </div>
+    <section class="motos1">
+      <article>
+        <img src="../imagenes/motos/askoll_es1.jpg" alt="No se puede acceder a la fuente">
+        <div class="textos">
+          <h3>ASKOLL ES1</h3>
+          <p>Diseño, tecnología, ahorro, ambiente, estilo de vida, desempeño, belleza, diversión. Todo incluido. Súbete
+            y enamórate de todo lo que ...
+          </p>
+        </div>
+        <div class="leer">
+          <a href="../usuario/articulos/motos/askoll_es1.html">LEER MAS</a>
+        </div>
+      </article>
+
+      <article>
+        <img src="../imagenes/motos/bmw_cevolution.jpg" alt="No se puede acceder a la fuente">
+        <div class="textos">
+          <h3>BMW CEVOLUTION</h3>
+          <p>Ahora puedes experimentar la movilidad eléctrica del futuro con el BMW C evolution. Este maxiscooter
+            eléctrico combina la ...
+          </p>
+        </div>
+        <div class="leer">
+          <a href="../usuario/articulos/motos/bmw_cevolution.html">LEER MAS</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="motos2">
+      <article>
+        <img src="../imagenes/motos/brammo_empulse.jpg" alt="No se puede acceder a la fuente">
+        <div class="textos">
+          <h3>BRAMMO EMPULSE</h3>
+          <p>La californiana Brammo ha hecho una fuerte apuesta por un concepto de moto eléctrica inédita hasta el
+            momento ya que monta una ...
+          </p>
+        </div>
+        <div class="leer">
+          <a href="../usuario/articulos/motos/brammo_empulse.html">LEER MAS</a>
+        </div>
+      </article>
+
+      <article>
+        <img src="../imagenes/motos/bultaco_brinco.jpg" alt="No se puede acceder a la fuente">
+        <div class="textos">
+          <h3>BULTACO BRINCO</h3>
+          <p>La carismática marca Bultaco sigue esforzándose por afianzarse en su segunda juventud. Quizá uno de los
+            mayores retos para el ...
+          </p>
+        </div>
+        <div class="leer">
+          <a href="../usuario/articulos/motos/bultaco_brinco.html">LEER MAS</a>
+        </div>
+      </article>
+    </section>
+
+  </main>
+  <footer>
+    <div class="footer_superior">
+      <div class="columna1">
+        <h3>Mas información</h3>
+        <p>
+          Movilidad Cero Emisiones es un portal informativo de contenido dedicado al mundo de la movilidad
+          electrica. Divulgamos y promovemos un transporte más sostenible y cero emisiones.
+        </p>
+      </div>
+      <div class="columna2">
+        <h3>Datos de contacto</h3>
+        <div class="info">
+          <i class="fas fa-address-card"></i>
+          <label for="direccion">MOVILIDAD CERO EMISIONES</label>
+        </div>
+        <div class="info">
+          <i class="far fa-envelope"></i>
+          <label for="correo">mce.responde@gmail.com</label>
+        </div>
+        <div class="info">
+          <i class="fab fa-whatsapp"></i>
+          <label for="telefono">+34 609 07 16 48</label>
+        </div>
+      </div>
+      <div class="columna3">
+        <h3>Redes sociales</h3>
+        <div class="social">
+          <a href="www.facebook.com"><i class="fab fa-facebook-square"></i>Síguenos en Facebook</a>
+        </div>
+        <div class="social">
+          <a href="www.twitter.com"><i class="fab fa-twitter-square"></i>Síguenos en Twitter</a>
+        </div>
+        <div class="social">
+          <a href="www.instagram.com"><i class="fab fa-instagram"></i>Síguenos en Instagram</a>
+        </div>
+        <div class="social">
+          <a href="www.youtube.com"><i class="fab fa-youtube-square"></i>Síguenos en Youtube</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer_inferior">
+      <div>
+        <h5>2019 Movilidad Cero Emisiones</h5>
+      </div>
+      <div>
+        <h5>Todos los derechos reservados</h5>
+      </div>
+      <div>
+        <h5><a href="../usuario/politica.html">Politica de privacidad</a></h5>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
