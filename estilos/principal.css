@@ -4,6 +4,7 @@ body {
     color: #E4E3E7;
 }
 
+
 /******************** CABECERA ***********************/
 
 header {
@@ -25,7 +26,7 @@ header {
     left: 12%;
 }
 
-.titulo_cabecera {    
+.titulo_cabecera {
     position: absolute;
     width: 200px;
     top: 20px;
@@ -52,9 +53,9 @@ header {
 
 .login:hover {
     color: #009532;
-    outline: none; 
+    outline: none;
     transition: all 0.3s;
-    cursor: pointer;   
+    cursor: pointer;
 }
 
 .login:active {
@@ -65,23 +66,11 @@ header {
 }
 
 .formulario {
-    display: block;    
+    display: block;
     position: absolute;
-    width: 350px;    
+    width: 350px;
     top: 50px;
     right: 18%;
-}
-
-.visible {
-    visibility: visible;
-    opacity: 1;
-    transition: opacity 1s linear;
-}
-
-.oculto {
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 1s, opacity 1s linear;
 }
 
 #formulario>label {
@@ -117,9 +106,10 @@ header {
 }
 
 .boton:active {
-    color: #E4E3E7;    
+    color: #E4E3E7;
     outline: none;
 }
+
 
 /******************* BARRAS NAVEGACION ****************/
 
@@ -155,7 +145,7 @@ header {
 a {
     text-decoration: none;
     color: #E4E3E7;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .nav_principal li:hover {
@@ -167,6 +157,7 @@ a {
     color: #009532;
     transition: all 0.3s;
 }
+
 
 /********************* CENTRO *******************/
 
@@ -182,16 +173,16 @@ main a:hover {
     transition: all 0.3s;
 }
 
-.registro{
+.registro {
     text-align: center;
 }
 
-fieldset{
+fieldset {
     width: 40%;
     margin: auto;
 }
 
-fieldset label{
+fieldset label {
     display: inline-block;
     width: 150px;
     text-align: right;
@@ -199,26 +190,28 @@ fieldset label{
     text-transform: capitalize;
 }
 
-fieldset input, select{
+fieldset input,
+select {
     width: 250px;
     text-align: center;
     margin-top: 10px;
 }
 
-fieldset .radioB{
+fieldset .radioB {
     display: inline-block;
     width: 250px;
     text-align: center;
     margin-top: 10px;
 }
 
-fieldset input[type=radio], fieldset input[type=checkbox]{
+fieldset input[type=radio],
+fieldset input[type=checkbox] {
     display: inline-block;
     width: auto;
     margin-right: 10px;
 }
 
-.boton-registro{
+.boton-registro {
     margin: 10% 15% 5% 15%;
     font-size: 35px;
     background: none;
@@ -235,19 +228,19 @@ fieldset input[type=radio], fieldset input[type=checkbox]{
 }
 
 .boton-registro:active {
-    color: #3C3E41;    
+    color: #3C3E41;
     outline: none;
 }
 
 .rectangulo {
     text-transform: capitalize;
     position: relative;
-    bottom: 0px;    
+    bottom: 0px;
     width: fit-content;
     background-color: #009532;
     color: #E4E3E7;
     height: fit-content;
-    padding: 10px;    
+    padding: 10px;
 }
 
 .rectangulo h3 {
@@ -262,16 +255,16 @@ section {
 }
 
 #seccionModelo {
-    display: block;    
+    display: block;
 }
 
 article {
     width: 50%;
     max-width: 400px;
     margin: 1px;
-    -webkit-box-shadow: 10px 10px 15px 0px rgba(60,62,65,0.5);
-    -moz-box-shadow: 10px 10px 15px 0px rgba(60,62,65,0.5);
-    box-shadow: 10px 10px 15px 0px rgba(60,62,65,0.5);
+    -webkit-box-shadow: 10px 10px 15px 0px rgba(60, 62, 65, 0.5);
+    -moz-box-shadow: 10px 10px 15px 0px rgba(60, 62, 65, 0.5);
+    box-shadow: 10px 10px 15px 0px rgba(60, 62, 65, 0.5);
 }
 
 #articuloModelo {
@@ -290,7 +283,7 @@ img {
     height: auto;
 }
 
-#foto{
+#foto {
     position: absolute;
     right: 15%;
     top: 60%;
@@ -304,13 +297,13 @@ img {
     margin: 20px;
 }
 
-textarea{
+textarea {
     margin-top: 25px;
     width: 75%;
     height: 200px;
 }
 
-.video{
+.video {
     width: 800px;
     height: auto;
     text-align: center;
@@ -334,6 +327,7 @@ textarea{
     border-radius: 50px;
 }
 
+
 /**************** PANEL LATERAL ****************/
 
 aside {
@@ -353,12 +347,13 @@ aside {
     margin: 0px 1px 20px 1px;
 }
 
+
 /********************** PIE DE PAGINA *********************/
 
 footer {
     margin: 0px 12% 0% 12%;
     background-color: #3C3E41;
-    padding: 1% 5% 0% 5%;    
+    padding: 1% 5% 0% 5%;
 }
 
 footer a:hover {
@@ -391,7 +386,7 @@ footer a:hover {
     margin-left: 20px;
 }
 
-.social{
+.social {
     display: flex;
     margin-top: 10px;
 }
@@ -407,7 +402,7 @@ footer a:hover {
     justify-content: center;
 }
 
-.footer_inferior div{
+.footer_inferior div {
     display: inline-flex;
     margin: 0% 1% 0% 1%;
 }
