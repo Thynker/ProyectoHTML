@@ -119,12 +119,6 @@ th, td{
     z-index: 100;
 }
 
-.oculto {
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 1s, opacity 1s linear;
-    z-index: -100;
-}
 
 .boton{
     margin: 25px 50px 25px 0px;
