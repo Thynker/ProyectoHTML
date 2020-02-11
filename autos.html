@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Oscar Rodriguez Sedes">
+  <meta name="description" content="Movilidad Cero Emisiones es un portal informativo de contenido dedicado al mundo de la movilidad electrica">
+  <meta name="keywords" content="electrico,coche,automovil,motocileta,moto,bicicleta,patinete,sostenible,energia,renovable,verde,cambio,climatico,cero,emisiones">
+  <title>MCE - Movilidad Cero Emisiones</title>
+  <link rel="stylesheet" type="text/css" href="../estilos/principal.css">
+  <link rel="stylesheet" type="text/css" href="../estilos/imprimir.css" media="print">
+  <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Roboto:300'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+  <script type="text/javascript" src="../javascript/index.js"></script>
+</head>
+
+<body>
+  <header>
+    <a href="../index.html">
+      <img class="logo_cabecera" src="../imagenes/logotipo.png" alt="logotipo MCE">
+    </a>
+    <a class="oculto login" id="logueado" title="Logout" onclick="logout()">
+      <label>Logout</label><i class="far fa-user-circle"></i>
+    </a>
+  <button class="visible login" id="login" ondblclick="verFormulario()"><i class="fas fa-user-circle"></i></button>
+  <div class="formulario">
+    <form id="formulario" class="oculto" action="" method="post" onsubmit="return login(usuario.value,pass.value)">
+      <label>Usuario</label>
+      <input class="campos" type="email" id="usuario" placeholder="correo@mail.com" required>
+      <label>Contraseña</label>
+      <input class="campos" type="password" id="pass" required>
+      <button class="boton" type="submit" title="Login">
+        <i class="far fa-check-square"></i>
+      </button>
+      <a class="boton" title="Registro" href="../usuario/registro.html">
+        <i class="far fa-edit"></i>
+      </a>
+    </form>
+  </header>
+  <nav>
+    <div class="nav_principal">
+      <ul>
+        <li>
+          <a href="autos.html">AUTOMÓVILES</a>
+        </li>
+        <li>
+          <a href="camiones.html">CAMIONES </a>
+        </li>
+        <li>
+          <a href="buses.html">AUTOBUSES</a>
+        </li>
+        <li>
+          <a href="motos.html">MOTOCICLETAS</a>
+        </li>
+        <li>
+          <a href="bicis.html">BICICLETAS</a>
+        </li>
+        <li>
+          <a href="patinetes.html">PATINETES</a>
+        </li>
+        <li>
+          <a href="recarga.html">RECARGA</a>
+        </li>
+        <li>
+          <a href="legislacion.html">LEGISLACION</a>
+        </li>
+      </ul>
+    </div>
+    <div class="nav_secundaria">
+      <ul>
+        <li>
+          <i class="fas fa-home"></i><a href="../index.html">Inicio</a>
+        </li>
+        <li>
+          <i class="fas fa-long-arrow-alt-right"></i><a href="autos.html">Automóviles</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <aside>
+      <div class="anuncios">
+        <div class="rectangulo">
+          <h3>Noticias</h3>
+        </div>
+      </div>
+    </aside>
+    <div class="destacados">
+      <div class="rectangulo">
+        <h3>Automóviles</h3>
+      </div>
+    </div>
+    <section class="autos1">
+      <article>
+        <img src="../imagenes/autos/audi_etron.jpg" alt="No se puede acceder a la fuente">
+        <div class="textos">
+          <h3>AUDI E-TRON</h3>
+          <p>El nuevo Audi e-tron es el primer coche eléctrico puro de la marca de los cuatro aros. Se fabrica en la
+            planta de Bruselas (Bélgica), que es ...
+          </p>
+        </div>
+        <div class="leer">
+          <a href="../usuario/articulos/autos/audi_etron.html">LEER MAS</a>
+        </div>
+      </article>
+
+      <article>
+        <img src="../imagenes/autos/bmw_i3s.jpg" alt="No se puede acceder a la fuente">
+        <div class="textos">
+          <h3>BMW I3S</h3>
+          <p>El pequeño eléctrico urbano de BMW ya duplica la capacidad de batería del modelo original, lanzado a
+            finales de 2013, según nos adelanta ...
+          </p>
+        </div>
+        <div class="leer">
+          <a href="../usuario/articulos/autos/bmw_i3s.html">LEER MAS</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="autos2">
+      <article>
+        <img src="../imagenes/autos/hyundai_ioniq.JPG" alt="No se puede acceder a la fuente">
+        <div class="textos">
+          <h3>HYUNDAI IONIQ ELECTRICO</h3>
+          <p>El Hyundai IONIQ Eléctrico, uno de los coches eléctricos de batería más vendidos en Europa, estrenará el
+            próximo año una importante ...
+          </p>
+        </div>
+        <div class="leer">
+          <a href="../usuario/articulos/autos/hyundai_ioniq.html">LEER MAS</a>
+        </div>
+      </article>
+
+      <article>
+        <img src="../imagenes/autos/hyundai_kona.jpg" alt="No se puede acceder a la fuente">
+        <div class="textos">
+          <h3>HYUNDAI KONA EV</h3>
+          <p>El nuevo eléctrico Hyundai Kona EV ya está a la venta en sus dos configuraciones de motor y sus dos
+            baterías ...
+          </p>
+        </div>
+        <div class="leer">
+          <a href="../usuario/articulos/autos/hyundai_kona.html">LEER MAS</a>
+        </div>
+      </article>
+    </section>
+
+  </main>
+  <footer>
+    <div class="footer_superior">
+      <div class="columna1">
+        <h3>Mas información</h3>
+        <p>
+          Movilidad Cero Emisiones es un portal informativo de contenido dedicado al mundo de la movilidad
+          electrica. Divulgamos y promovemos un transporte más sostenible y cero emisiones.
+        </p>
+      </div>
+      <div class="columna2">
+        <h3>Datos de contacto</h3>
+        <div class="info">
+          <i class="fas fa-address-card"></i>
+          <label for="direccion">MOVILIDAD CERO EMISIONES</label>
+        </div>
+        <div class="info">
+          <i class="far fa-envelope"></i>
+          <label for="correo">mce.responde@gmail.com</label>
+        </div>
+        <div class="info">
+          <i class="fab fa-whatsapp"></i>
+          <label for="telefono">+34 609 07 16 48</label>
+        </div>
+      </div>
+      <div class="columna3">
+        <h3>Redes sociales</h3>
+        <div class="social">
+          <a href="www.facebook.com"><i class="fab fa-facebook-square"></i>Síguenos en Facebook</a>
+        </div>
+        <div class="social">
+          <a href="www.twitter.com"><i class="fab fa-twitter-square"></i>Síguenos en Twitter</a>
+        </div>
+        <div class="social">
+          <a href="www.instagram.com"><i class="fab fa-instagram"></i>Síguenos en Instagram</a>
+        </div>
+        <div class="social">
+          <a href="www.youtube.com"><i class="fab fa-youtube-square"></i>Síguenos en Youtube</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer_inferior">
+      <div>
+        <h5>2019 Movilidad Cero Emisiones</h5>
+      </div>
+      <div>
+        <h5>Todos los derechos reservados</h5>
+      </div>
+      <div>
+        <h5><a href="../usuario/politica.html">Politica de privacidad</a></h5>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
