@@ -1,0 +1,242 @@
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    color: #E4E3E7;
+}
+
+/********************** CABECERA *************************/
+
+header {
+    text-transform: uppercase;
+    height: 250px;
+    width: 100%;
+    background-image: url("../imagenes/portada.jpg");
+    background-position: center;
+    background-size: 76%;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+}
+
+.logo_cabecera {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 25px;
+    left: 12%;
+}
+
+.titulo_cabecera {    
+    position: absolute;
+    width: 200px;
+    top: 20px;
+    left: 15%;
+}
+
+.subtitulo_cabecera {
+    position: absolute;
+    width: 250px;
+    top: 200px;
+    left: 20%;
+}
+
+/************************ CENTRO **************************/
+
+main {
+    display: block;
+    width: 76%;
+    margin: auto;
+    color: #3C3E41;
+}
+
+section {
+    display: block;
+    border: 1px solid #3C3E41;
+    margin: 0px 0px 100px 25px;
+    width: 50%;   
+    position: absolute;
+}
+
+.registro{
+    text-align: center;
+}
+
+h4{
+    text-transform: capitalize;
+}
+
+.formulario {
+    text-align: center;
+    -webkit-box-shadow: 10px 10px 15px 0px rgba(60,62,65,0.5);
+    -moz-box-shadow: 10px 10px 15px 0px rgba(60,62,65,0.5);
+    box-shadow: 10px 10px 15px 0px rgba(60,62,65,0.5);
+}
+
+label{
+    text-transform: capitalize;
+    margin-right: 25px;
+}
+
+select{
+    margin-bottom: 25px;
+}
+
+img{
+    margin-bottom: 25px;
+    width: 10%;
+    height: auto;
+}
+
+.campos{
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    width: 50%;
+    margin-bottom: 25px;
+}
+
+textarea{
+    margin-top: 25px;
+    width: 75%;
+    height: 200px;
+}
+
+table{
+    width: 100%;
+}
+
+th{
+    text-transform: capitalize;
+}
+
+th, td{
+    text-align: center;    
+}
+
+.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s linear;
+    z-index: 100;
+}
+
+.oculto {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 1s, opacity 1s linear;
+    z-index: -100;
+}
+
+.boton{
+    margin: 25px 50px 25px 0px;
+    background: none;
+    border: none;
+    font-size: 35px;
+    color: #3C3E41;
+    outline: none;
+}
+
+.boton:hover {
+    color: #009532;
+    outline: none;
+    transition: all 0.3s;
+    font-size: 40px;
+}
+
+.boton:active {
+    color: #3C3E41;    
+    outline: none;
+    transition: all 0.3s;
+    font-size: 45px;
+}
+
+/****************** BARRA DE NAVEGACION ******************/
+
+.nav_secundaria {
+    text-align: left;
+    width: 76%;
+    margin: -20px auto 60px auto;
+    background-color: #3C3E41;
+}
+
+.nav_secundaria li {
+    display: inline-block;
+    padding: 10px 5px 10px 5px;
+}
+
+.nav_secundaria i {
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #E4E3E7; 
+}
+
+.nav_secundaria a:hover {
+    color: #009532;
+    font-weight: bold;
+}
+
+/********************* MENU LATERAL **********************/
+
+aside {
+    float: right;
+    width: 25%;
+    text-align: right;
+}
+
+.anuncios {
+    border-bottom: 5px solid #009532;
+}
+
+.destacados {
+    position: relative;
+    width: 70%;
+    border-bottom: 5px solid #009532;
+    margin: 0px 1px 20px 1px;
+}
+
+.rectangulo {
+    text-transform: capitalize;
+    position: relative;
+    bottom: 0px;    
+    width: fit-content;
+    background-color: #009532;
+    color: #E4E3E7;
+    height: fit-content;
+    padding: 10px;    
+}
+
+.rectangulo h3 {
+    margin: 0px;
+}
+
+.menu li{
+    width: fit-content;
+    text-align: left;
+    list-style: none;
+    margin: 50px 20px;
+}
+
+.menu button{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    color: #009532;
+    width: fit-content;    
+    padding: 15px;
+    background-color: transparent;
+    border: none;
+}
+
+.menu button:hover{
+    background: #009532;
+    color: #E4E3E7;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+button{
+    border: none;
+    outline: 0px;
+}
