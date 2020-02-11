@@ -1,0 +1,413 @@
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    color: #E4E3E7;
+}
+
+/******************** CABECERA ***********************/
+
+header {
+    text-transform: uppercase;
+    height: 250px;
+    width: 100%;
+    background-image: url("../imagenes/portada.jpg");
+    background-position: center;
+    background-size: 76%;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+}
+
+.logo_cabecera {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 25px;
+    left: 12%;
+}
+
+.titulo_cabecera {    
+    position: absolute;
+    width: 200px;
+    top: 20px;
+    left: 15%;
+}
+
+.subtitulo_cabecera {
+    position: absolute;
+    width: 250px;
+    top: 200px;
+    left: 20%;
+}
+
+.login {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 40px;
+    right: 15%;
+    color: #E4E3E7;
+    outline: none;
+    font-size: 35px;
+}
+
+.login:hover {
+    color: #009532;
+    outline: none; 
+    transition: all 0.3s;
+    cursor: pointer;   
+}
+
+.login:active {
+    color: #E4E3E7;
+    outline: none;
+    transition: all 0.3s;
+    font-weight: bolder;
+}
+
+.formulario {
+    display: block;    
+    position: absolute;
+    width: 350px;    
+    top: 50px;
+    right: 18%;
+}
+
+.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s linear;
+}
+
+.oculto {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 1s, opacity 1s linear;
+}
+
+#formulario>label {
+    float: left;
+    width: 120px;
+    padding-right: 5px;
+    text-align: right;
+}
+
+.campos {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    width: 175px;
+    margin-bottom: 10px;
+}
+
+.boton {
+    float: right;
+    margin-right: 18%;
+    font-size: 35px;
+    background: none;
+    border: none;
+    color: #E4E3E7;
+    outline: none;
+}
+
+.boton:hover {
+    color: #009532;
+    outline: none;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.boton:active {
+    color: #E4E3E7;    
+    outline: none;
+}
+
+/******************* BARRAS NAVEGACION ****************/
+
+.nav_principal {
+    text-align: left;
+    width: 76%;
+    margin: -20px auto auto auto;
+    background-color: #009532;
+}
+
+.nav_principal li {
+    display: inline-block;
+    padding: 20px 15px 20px 15px;
+    margin: auto;
+}
+
+.nav_secundaria {
+    text-align: left;
+    width: 76%;
+    margin: -20px auto 60px auto;
+    background-color: #3C3E41;
+}
+
+.nav_secundaria li {
+    display: inline-block;
+    padding: 10px 5px 10px 5px;
+}
+
+.nav_secundaria i {
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #E4E3E7;
+    cursor: pointer; 
+}
+
+.nav_principal li:hover {
+    background-color: #3C3E41;
+    transition: all 0.3s;
+}
+
+.nav_secundaria a:hover {
+    color: #009532;
+    transition: all 0.3s;
+}
+
+/********************* CENTRO *******************/
+
+main {
+    display: block;
+    width: 76%;
+    margin: auto;
+    color: #3C3E41;
+}
+
+main a:hover {
+    color: #3C3E41;
+    transition: all 0.3s;
+}
+
+.registro{
+    text-align: center;
+}
+
+fieldset{
+    width: 40%;
+    margin: auto;
+}
+
+fieldset label{
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    margin-right: 10px;
+    text-transform: capitalize;
+}
+
+fieldset input, select{
+    width: 250px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+fieldset .radioB{
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+fieldset input[type=radio], fieldset input[type=checkbox]{
+    display: inline-block;
+    width: auto;
+    margin-right: 10px;
+}
+
+.boton-registro{
+    margin: 10% 15% 5% 15%;
+    font-size: 35px;
+    background: none;
+    border: none;
+    color: #3C3E41;
+    outline: none;
+}
+
+.boton-registro:hover {
+    color: #009532;
+    outline: none;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.boton-registro:active {
+    color: #3C3E41;    
+    outline: none;
+}
+
+.rectangulo {
+    text-transform: capitalize;
+    position: relative;
+    bottom: 0px;    
+    width: fit-content;
+    background-color: #009532;
+    color: #E4E3E7;
+    height: fit-content;
+    padding: 10px;    
+}
+
+.rectangulo h3 {
+    margin: 0px;
+}
+
+section {
+    width: 70%;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#seccionModelo {
+    display: block;    
+}
+
+article {
+    width: 50%;
+    max-width: 400px;
+    margin: 1px;
+    -webkit-box-shadow: 10px 10px 15px 0px rgba(60,62,65,0.5);
+    -moz-box-shadow: 10px 10px 15px 0px rgba(60,62,65,0.5);
+    box-shadow: 10px 10px 15px 0px rgba(60,62,65,0.5);
+}
+
+#articuloModelo {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+    height: 300px;
+    margin: auto;
+}
+
+#imgModelo {
+    height: auto;
+}
+
+#foto{
+    position: absolute;
+    right: 15%;
+    top: 60%;
+    width: 250px;
+    height: auto;
+    z-index: 1;
+}
+
+.textos {
+    text-align: justify;
+    margin: 20px;
+}
+
+textarea{
+    margin-top: 25px;
+    width: 75%;
+    height: 200px;
+}
+
+.video{
+    width: 800px;
+    height: auto;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.leer {
+    float: right;
+    width: fit-content;
+    background-color: #009532;
+    color: #E4E3E7;
+    height: fit-content;
+    padding: 10px 20px 10px 20px;
+    margin: 0px 25px 25px 0px;
+    border-radius: 50px;
+}
+
+/**************** PANEL LATERAL ****************/
+
+aside {
+    float: right;
+    width: 25%;
+    text-align: right;
+}
+
+.anuncios {
+    border-bottom: 5px solid #009532;
+}
+
+.destacados {
+    position: relative;
+    width: 70%;
+    border-bottom: 5px solid #009532;
+    margin: 0px 1px 20px 1px;
+}
+
+/********************** PIE DE PAGINA *********************/
+
+footer {
+    margin: 0px 12% 0% 12%;
+    background-color: #3C3E41;
+    padding: 1% 5% 0% 5%;    
+}
+
+footer a:hover {
+    color: #009532;
+    transition: all 0.3s;
+}
+
+.footer_superior {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.columna1 {
+    max-width: 400px;
+    text-align: left;
+}
+
+.info {
+    display: flex;
+    margin-top: 10px;
+}
+
+.columna2 {
+    max-width: 400px;
+    text-align: left;
+}
+
+.info label {
+    margin-left: 20px;
+}
+
+.social{
+    display: flex;
+    margin-top: 10px;
+}
+
+.social a i {
+    margin-right: 20px;
+}
+
+.footer_inferior {
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_inferior div{
+    display: inline-flex;
+    margin: 0% 1% 0% 1%;
+}
