@@ -2,6 +2,10 @@ body {
     font-family: Roboto, sans-serif;
     font-size: 18px;
     color: #E4E3E7;
+    margin: 0;
+    background: rgb(236,237,236);
+    background: linear-gradient(90deg, rgba(236,237,236,1) 2%, rgba(183,217,188,1) 34%, rgba(166,199,170,1) 76%, rgba(54,143,70,1) 93%, rgba(9,121,29,1) 100%, rgba(0,212,255,1) 100%);
+    margin:0;
 }
 
 /********************** CABECERA *************************/
@@ -232,4 +236,21 @@ aside {
 .button{
     border: none;
     outline: 0px;
+}
+
+input,textarea {
+    
+    text-align: center;
+    margin-top: 10px;
+    border-width: 2px;
+    padding: 5px;
+    font-size: 13px;
+    border-style: solid;
+    border-color: #72c2a2;
+    background-color: #a3d1c8;
+    color: #0d0c0d;
+    box-shadow: inset 2px -5px 8px 0px rgba(42,42,42,.72);
+    font-weight: bold;
+    font-style: none;
+    font-family: sans-serif;
 }
