@@ -251,7 +251,7 @@ fieldset input[type=checkbox] {
 }
 
 section {
-    width: 70%;
+    width: 100%;
     margin-bottom: 50px;
     display: flex;
     justify-content: space-around;
@@ -263,8 +263,7 @@ section {
 
 article {
     width: 50%;
-    max-width: 400px;
-    margin: 1px;
+    margin: 1%;
     -webkit-box-shadow: 10px 10px 15px 0px rgba(60, 62, 65, 0.5);
     -moz-box-shadow: 10px 10px 15px 0px rgba(60, 62, 65, 0.5);
     box-shadow: 10px 10px 15px 0px rgba(60, 62, 65, 0.5);
@@ -345,7 +344,7 @@ aside {
 
 .destacados {
     position: relative;
-    width: 70%;
+    width: 100%;
     border-bottom: 5px solid #009532;
     margin: 0px 1px 20px 1px;
 }
