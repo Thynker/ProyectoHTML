@@ -198,6 +198,17 @@ select {
     width: 250px;
     text-align: center;
     margin-top: 10px;
+    border-width: 2px;
+    padding: 5px;
+    font-size: 13px;
+    border-style: solid;
+    border-color: #72c2a2;
+    background-color: #a3d1c8;
+    color: #0d0c0d;
+    box-shadow: inset 2px -5px 8px 0px rgba(42,42,42,.72);
+    font-weight: bold;
+    font-style: none;
+    font-family: sans-serif;
 }
 
 fieldset .radioB {
@@ -213,6 +224,7 @@ fieldset input[type=checkbox] {
     width: auto;
     margin-right: 10px;
 }
+
 
 .boton-registro {
     margin: 10% 15% 5% 15%;
@@ -303,6 +315,17 @@ textarea {
     margin-top: 25px;
     width: 75%;
     height: 200px;
+    border-width: 2px;
+    padding: 5px;
+    font-size: 13px;
+    border-style: solid;
+    border-color: #72c2a2;
+    background-color: #a3d1c8;
+    color: #0d0c0d;
+    box-shadow: inset 2px -5px 8px 0px rgba(42,42,42,.72);
+    font-weight: bold;
+    font-style: none;
+    font-family: sans-serif;
 }
 
 .video {
