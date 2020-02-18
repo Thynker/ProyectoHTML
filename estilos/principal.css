@@ -431,3 +431,13 @@ footer a:hover {
     display: inline-flex;
     margin: 0% 1% 0% 1%;
 }
+
+/************************TABLA********************/
+
+table,td{
+    width: 100%;
+    border: solid black 2px;
+    font-size:  12px;
+}
+
+
