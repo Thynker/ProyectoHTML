@@ -13,7 +13,6 @@
   <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Roboto:300'>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  <script type="text/javascript" src="../javascript/admin.js"></script>
 </head>
 
 <body>
@@ -41,9 +40,9 @@
       </div>
       <div class="menu">
         <ul>
-          <li><button>crear articulo</button></li>
-          <li><button>modificar articulo</button></li>
-          <li><button>eliminar articulo</button></li>
+          <li><a class="button" href="admin_crear.html">crear articulo</a></li>
+          <li><a class="button" href="admin_modificar.html">modificar articulo</a></li>
+          <li><a class="button" href="admin_eliminar.html">eliminar articulo</a></li>
         </ul>
       </div>
     </aside>
@@ -53,8 +52,8 @@
       </div>
     </div>
    
-    <section id="eliminador" class="oculto formulario">
-      <form method="POST">
+    <section id="eliminador">
+      <form class="formulario" method="POST">
         <h4>eliminar articulo</h4>
         <label>seleccion de articulo</label>
         <select id="selEliminador">

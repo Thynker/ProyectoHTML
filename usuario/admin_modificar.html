@@ -13,7 +13,6 @@
   <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Roboto:300'>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  <script type="text/javascript" src="../javascript/admin.js"></script>
 </head>
 
 <body>
@@ -41,9 +40,9 @@
       </div>
       <div class="menu">
         <ul>
-          <li><button>crear articulo</button></li>
-          <li><button>modificar articulo</button></li>
-          <li><button>eliminar articulo</button></li>
+          <li><a class="button" href="admin_crear.html">crear articulo</a></li>
+          <li><a class="button" href="admin_modificar.html">modificar articulo</a></li>
+          <li><a class="button" href="admin_eliminar.html">eliminar articulo</a></li>
         </ul>
       </div>
     </aside>
@@ -53,21 +52,53 @@
       </div>
     </div>
    
-    <section id="eliminador" class="oculto formulario">
-      <form method="POST">
-        <h4>eliminar articulo</h4>
+    <section id="modificador">
+      <form class="formulario" method="POST">
+        <h4>modificar articulo</h4>
         <label>seleccion de articulo</label>
-        <select id="selEliminador">
-          <option>1</option>.
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-          <option>6</option>
+        <select id="selModificador">
+          <optgroup label="Automoviles">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </optgroup>
+          <optgroup label="Camiones">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </optgroup>
+          <optgroup label="Autobuses">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </optgroup>
+          <optgroup label="Motocicletas">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </optgroup>
+          <optgroup label="Bicicletas">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </optgroup>
+          <optgroup label="Patinetes">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </optgroup>
         </select><br />
-        <label>imagen del articulo</label><img id="imgEliminador" src="" alt="imagen"><br />
-        <label>titulo del articulo</label><input type="text" class="campos" placeholder="Titulo" readonly><br />
-        <textarea class="area" placeholder="Descripcion completa del articulo" readonly></textarea><br />
+        <label>imagen del articulo</label><img id="imgModificador" src="" alt="imagen"><br />
+        <label>nueva imagen</label><input type="file" class="campos"><br />
+        <label>titulo del articulo</label><input type="text" class="campos" placeholder="Titulo" required><br />
+        <textarea class="area" placeholder="Descripcion completa del articulo" required></textarea><br />
+        <button type="reset" class="boton"><i class="fas fa-redo-alt"></i></button>
         <button type="submit" class="boton"><i class="fas fa-check-circle"></i></button>
       </form>
     </section>
