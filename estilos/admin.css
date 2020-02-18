@@ -212,7 +212,7 @@ aside {
     margin: 50px 20px;
 }
 
-.menu .button{
+.menu button{
     text-transform: uppercase;
     font-weight: 600;
     font-size: 18px;
@@ -223,14 +223,14 @@ aside {
     border: none;
 }
 
-.menu .button:hover{
+.menu button:hover{
     background: #009532;
     color: #E4E3E7;
     transition: all 0.3s;
     cursor: pointer;
 }
 
-.button{
+button{
     border: none;
     outline: 0px;
 }
