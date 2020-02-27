@@ -10,7 +10,6 @@
     <link rel="stylesheet" type="text/css" href="../estilos/principal.css">
     <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Roboto:300'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <script src="../javascript/validaciones.js"></script>
 </head>
 
 <body>
@@ -32,61 +31,61 @@
         </div>
     </nav>
     <main>
-        <div class="registro">
-            <form action="#">
+        <div>
+            <form class="registro" action="#">
                 <fieldset>
                     <legend><strong>REGISTRO</strong></legend>
                     <div>
-                        <label>foto</label><input type=" file " accept="image/* " data-max-size="1024 " name="foto " alt="foto " title="Imagen max 1Mb ">
+                        <label>foto</label><input type="file" accept="image/*" data-max-size="1024" name="foto" alt="foto" title="Imagen max 1Mb">
                     </div>
                     <br />
                     <div>
-                        <label>nombre</label><input type="text " id="nombre " name="nombre " maxlength="30 ">
-                        <div><span class="error " id="errorNombre "></span></div>
+                        <label>nombre</label><input type="text" id="nombre" name="nombre" maxlength="30">
+                        <div><span class="error" id="errorNombre "></span></div>
                     </div>
                     <div>
-                        <label>nick</label><input type="text " name="nick ">
-                        <div><span class="error " id="errorNick "></span></div>
+                        <label>nick</label><input type="text" name="nick">
+                        <div><span class="error" id="errorNick"></span></div>
                     </div>
                     <div>
-                        <label>edad</label><input type="number " id="edad " name="edad " min="18 " max="120>
-                <div><span class=" error " id="errorEdad "></span></div>
-        </div>
-        <br />
-        <div>
-            <fieldset>
-                <legend>Sexo</legend>
-                <div class="radioB ">
-                    V<input type="radio " id="sexoV " name="sexo " value="V "> M
-                    <input type="radio " id="sexoM " name="sexo " value="M ">
-                </div>
-                <div><span class="error " id="errorSexo "></span></div>
-            </fieldset>
-        </div>
-        <br />
-        <div>
-            <fieldset>
-                <legend>Aficiones</legend>
-                <div class="radioB ">
-                    Deporte<input type="checkbox " id="check1 " name="aficion " value="deporte " multiple> Cine
-                    <input type="checkbox " id="check2 " name="aficion " value="cine " multiple> Lectura
-                    <input type="checkbox " id="check3 " name="aficion " value="lectura " multiple>
-                </div>
-                <label></label>
-                <div class="radioB ">
-                    Playa<input type="checkbox " id="check4 " name="aficion " value="playa " multiple> Fiesta
-                    <input type="checkbox " id="check5 " name="aficion " value="fiesta " multiple> Viajar
-                    <input type="checkbox " id="check6 " name="aficion " value="viajar " multiple>
-                </div>
-                <div><span class="error " id="errorAficiones "></span></div>
-            </fieldset>
-        </div>
-        <br /><br />
-        <div>
-            <label>marca de coche</label>
-            <select id="marca " name="marcas ">
+                        <label>edad</label><input type="number" id="edad" name="edad" min="18" max="120">
+                        <div><span class="error" id="errorEdad"></span></div>
+                    </div>
+                    <br />
+                    <div>
+                        <fieldset>
+                            <legend>Sexo</legend>
+                            <div class="radioB">
+                                V<input type="radio" id="sexoV" name="sexo" value="V"> M
+                                <input type="radio" id="sexoM" name="sexo" value="M">
+                            </div>
+                            <div><span class="error" id="errorSexo"></span></div>
+                        </fieldset>
+                    </div>
+                    <br />
+                    <div>
+                        <fieldset>
+                            <legend>Aficiones</legend>
+                            <div class="radioB">
+                                Deporte<input type="checkbox" id="check1" name="aficion" value="deporte" multiple> Cine
+                                <input type="checkbox" id="check2" name="aficion" value="cine" multiple> Lectura
+                                <input type="checkbox" id="check3" name="aficion" value="lectura" multiple>
+                            </div>
+                            <label></label>
+                            <div class="radioB">
+                                Playa<input type="checkbox" id="check4" name="aficion" value="playa" multiple> Fiesta
+                                <input type="checkbox" id="check5" name="aficion" value="fiesta" multiple> Viajar
+                                <input type="checkbox" id="check6" name="aficion" value="viajar" multiple>
+                            </div>
+                            <div><span class="error" id="errorAficiones"></span></div>
+                        </fieldset>
+                    </div>
+                    <br /><br />
+                    <div>
+                        <label>marca de coche</label>
+                        <select id="marca" name="marcas">
                             <option></option>
-                            <optgroup label="Americanos ">
+                            <optgroup label="Americanos">
                                 <option>Chevrolet</option>
                                 <option>Cadillac</option>
                                 <option>Dodge</option>
@@ -94,14 +93,14 @@
                                 <option>Lincoln</option>
                                 <option>Chrysler</option>
                             </optgroup>
-                            <optgroup label="Europeos ">
+                            <optgroup label="Europeos">
                                 <option>Alfa Romeo</option>
                                 <option>Aston Martin</option>
                                 <option>Audi</option>
                                 <option>Mercedes</option>
                                 <option>BMW</option>
                             </optgroup>
-                            <optgroup label="Asiaticos ">
+                            <optgroup label="Asiaticos">
                                 <option>Subaru</option>
                                 <option>Toyota</option>
                                 <option>Honda</option>
@@ -109,50 +108,48 @@
                                 <option>Infiniti</option>
                             </optgroup>
                         </select>
-            <div><span class="error " id="errorMarca "></span></div>
-        </div>
-        <div>
-            <label>color favorito</label>
-            <input id="color " list="colores ">
-            <datalist id="colores ">
+                        <div><span class="error" id="errorMarca"></span></div>
+                    </div>
+                    <div>
+                        <label>color favorito</label>
+                        <input id="color" list="colores">
+                        <datalist id="colores">
                             <option>Azul</option>
                             <option>Amarillo</option>
                             <option>Rojo</option>
                             <option>Verde</option>
                         </datalist>
-            <div><span class="error " id="errorColor "></span></div>
-        </div>
-        <div>
-            <label>email</label><input type="email " id="email " name="email " placeholder="correoelectronico@mail.com ">
-            <div><span class="error " id="errorEmail "></span></div>
-        </div>
-        <div>
-            <label>repita email</label><input type="email " id="email2 " name="email2 " autocomplete="off " placeholder="correoelectronico@mail.com ">
-            <div><span class="error " id="errorEmail2 "></span></div>
-        </div>
-        <div>
-            <label>contraseña</label><input type="password " id="pass " name="pass " placeholder="******** " minlength="8 " title="8 caracteres minimo, incluyendo mayus, minus y numero ">
-            <div><span class="error " id="errorPass "></span></div>
-        </div>
-        <div>
-            <label>repita contraseña</label><input type="password " id="pass2 " name="pass2 " placeholder="******** " minlength="8 " autocomplete="off " title="8 caracteres minimo, incluyendo mayus, minus y numero ">
-            <div><span class="error " id="errorPass2 "></span></div>
-        </div>
-        <div>
-            <textarea id="comentarios " placeholder="Comentarios "></textarea>
-            <div><span class="error " id="errorComentarios "></span></div>
-        </div>
-        <summary></summary>
-        <button class="boton-registro " type="reset ">
-                        <i class="fas fa-backspace "></i>
+                        <div><span class="error" id="errorColor"></span></div>
+                    </div>
+                    <div>
+                        <label>email</label><input type="email" id="email" name="email" placeholder="correoelectronico@mail.com">
+                        <div><span class="error" id="errorEmail"></span></div>
+                    </div>
+                    <div>
+                        <label>repita email</label><input type="email " id="email2 " name="email2 " autocomplete="off" placeholder="correoelectronico@mail.com">
+                        <div><span class="error" id="errorEmail2"></span></div>
+                    </div>
+                    <div>
+                        <label>contraseña</label><input type="password" id="pass" name="pass" placeholder="********" minlength="8" title="8 caracteres minimo, incluyendo mayus, minus y numero">
+                        <div><span class="error" id="errorPass"></span></div>
+                    </div>
+                    <div>
+                        <label>repita contraseña</label><input type="password" id="pass2" name="pass2" placeholder="********" minlength="8" autocomplete="off" title="8 caracteres minimo, incluyendo mayus, minus y numero">
+                        <div><span class="error" id="errorPass2"></span></div>
+                    </div>
+                    <div>
+                        <textarea id="comentarios" placeholder="Comentarios"></textarea>
+                        <div><span class="error" id="errorComentarios"></span></div>
+                    </div>
+                    <button class="boton-registro" type="reset">
+                        <i class="fas fa-backspace"></i>
                     </button>
-        <button class="boton-registro " type="submit ">
-                        <i class="fas fa-check-square "></i>
+                    <button class="boton-registro" type="submit">
+                        <i class="fas fa-check-square"></i>
                     </button>
-        </fieldset>
-        </form>
+                </fieldset>
+            </form>
         </div>
-        <img id="foto " src=" " hidden alt="Imagen del usuario ">
     </main>
 </body>
 
